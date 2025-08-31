@@ -2,7 +2,7 @@ import { Navbar } from "./components/ui/Navbar";
 import Card from "./components/ui/Card";
 import InputCard from "./components/ui/InputCard";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 function App() {
   const [item, setItem] = useState("");
   const [todo, setTodo] = useState([]);
@@ -19,7 +19,7 @@ function App() {
           item={item}
           setItem={setItem}
           setTodo={setTodo}
-          todo={todo} //error here why because it is an array who knows
+          todo={todo}
         />
       </div>
     </>

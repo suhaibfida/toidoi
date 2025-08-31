@@ -1,5 +1,5 @@
 interface prop {
-  onClick: any; //what should i pass here
+  onClick: any;
 }
 const Button = (props: prop) => {
   return (

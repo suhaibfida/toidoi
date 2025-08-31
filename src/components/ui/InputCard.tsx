@@ -4,21 +4,19 @@ interface prop {
   width: string;
   height: string;
   setItem: (val: any) => void;
-  item: any; // dow we always use function in state setter and check why any is here
+  item: string;
   setTodo: (val: any) => void;
-  todo: any;
-  input?: any;
-  button?: any;
+  todo: string[];
+  input?: string;
+  button?: string;
 }
 const InputCard = (props: prop) => {
   function onChange(e: React.ChangeEvent<HTMLInputElement>) {
-    //what if there are two input boxes there how it will differentiate onchange
     const value = e.target.value;
     props.setItem(value);
   }
 
-  function onClick(e: any) {
-    //what will be the type here
+  function onClick(e: React.MouseEvent<HTMLInputElement>) {
     props.setTodo((prev: []) => [...prev, props.item]); // is this correct
   }
   return (
