@@ -10,16 +10,16 @@ const Card = (props: prop) => {
     <>
       <div
         className={`${props.todo.length === 0 ? "hidden" : ""}
-          flex justify-center duration-5000`}
+          flex justify-center duration-5000 h-64`}
       >
         <div
-          className={`${props.width} ${props.height} bg-gray-200 justify-center text-center rounded-2xl my-6 `}
+          className={`${props.width} ${props.height} bg-gray-200 justify-center text-center rounded-2xl overflow-y-auto`}
         >
           {" "}
-          <div className="text-2xl font-bold text-slate-600">TODOS</div>
+          <div className="text-2xl font-bold text-slate-600 mt-3">TODOS</div>
           {props.todo.map((todo) => (
             <div>
-              <div className="bg-violet-500 rounded-md w-xl ml-10 h-16 mt-5 flex justify-between items-center duration-500">
+              <div className="bg-violet-500 rounded-md w-xl ml-10 h-16 mt-2 mb-2 flex justify-between items-center duration-500">
                 <div className="pl-2 text-white text-lg">
                   <div className="flex">
                     <div className="pr-1">🌑 </div>

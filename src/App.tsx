@@ -4,8 +4,8 @@ import InputCard from "./components/ui/InputCard";
 
 import { useState } from "react";
 function App() {
-  const [item, setItem] = useState("");
-  const [todo, setTodo] = useState([]);
+  const [item, setItem] = useState<string>("");
+  const [todo, setTodo] = useState<string[]>([]);
   return (
     <>
       <div
@@ -15,7 +15,7 @@ function App() {
         <Card width={"w-2xl"} height={"min-h-[60vh]"} todo={todo} />
         <InputCard
           width={"w-4xl"}
-          height={"min-h-[15vh]"}
+          height={"h-10"}
           item={item}
           setItem={setItem}
           setTodo={setTodo}

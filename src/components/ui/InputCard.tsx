@@ -21,9 +21,9 @@ const InputCard = (props: prop) => {
   }
   return (
     <>
-      <div className="flex justify-center ">
+      <div className="flex justify-center items-end">
         <div
-          className={`${props.width} ${props.height} text-center rounded-2xl py-6 flex items-center justify-center`}
+          className={`${props.width} ${props.height} text-center rounded-2xl fixed translate-y-70`}
         >
           <Input onChange={onChange} />
           <Button onClick={onClick} />
