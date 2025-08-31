@@ -2,7 +2,7 @@ import { Navbar } from "./components/ui/Navbar";
 import Card from "./components/ui/Card";
 import InputCard from "./components/ui/InputCard";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 function App() {
   const [item, setItem] = useState("");
   const [todo, setTodo] = useState([]);
