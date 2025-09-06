@@ -17,7 +17,7 @@ const InputCard = (props: prop) => {
   }
 
   function onClick(e: React.MouseEvent<HTMLInputElement>) {
-    props.setTodo((prev: []) => [...prev, props.item]); // is this correct
+    props.setTodo((prev: []) => [...prev, props.item]);
   }
   return (
     <>
@@ -25,7 +25,9 @@ const InputCard = (props: prop) => {
         <div
           className={`${props.width} ${props.height} text-center rounded-2xl fixed translate-y-70`}
         >
-          <Input onChange={onChange} />
+          {/* <Input onChange={onChange} value={setItem} /> */} how to pass prop
+          here i want to pass value and setitem so that i can set input value to
+          ""
           <Button onClick={onClick} />
         </div>
       </div>
