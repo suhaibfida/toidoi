@@ -31,8 +31,8 @@ const Card = (props: prop) => {
                     {<EditIcon />}
                   </div>
                   <div className="pr-7 text-gray-700 hover:text-gray-600 cursor-pointer">
-                    {<DeleteIcon />} how to pass function here it is a image
-                    component should i pass it here or any other way
+                    {<DeleteIcon value={value} />} how to pass function here it
+                    is a image component should i pass it here or any other way
                   </div>
                 </div>
               </div>
